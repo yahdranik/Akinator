@@ -1,0 +1,21 @@
+/* Auto generate code */
+
+digraph G {
+bgcolor="#fbecff";
+forcelabels=true;
+ordering=out;
+nodesep=1.;
+ranksep=1.;
+node [fontsize=12, shape=box, style="filled, rounded", color="#23033a", fontname="DejaVu Sans"];
+edge [labelfloat=false];
+
+n0x6db2ae5e0040 [label="Элемент гардероба?", color=blue, style=filled, fillcolor="#dcaee8"];
+n0x6db2ae5e00a0 [label="Головной убор?", color=blue, style=filled, fillcolor="#dcaee8"];
+n0x6db2ae5e00d0 [label="Шапка", color=blue, style=filled, fillcolor="#dcaee8"];
+n0x6db2ae5e0100 [label="Шарф", color=blue, style=filled, fillcolor="#dcaee8"];
+n0x6db2ae5e00a0 -> n0x6db2ae5e00d0 [label = "Да"];
+n0x6db2ae5e00a0 -> n0x6db2ae5e0100 [label = "Нет"];
+n0x6db2ae5e0130 [label="Пальто", color=blue, style=filled, fillcolor="#dcaee8"];
+n0x6db2ae5e0040 -> n0x6db2ae5e00a0 [label = "Да"];
+n0x6db2ae5e0040 -> n0x6db2ae5e0130 [label = "Нет"];
+}
