@@ -21,10 +21,11 @@ void hello_and_menu()
                 "If I fail to guess correctly, you can add that character.\n" MY_END_CUSTOM
                 MY_CYAN_AND_CURSIVE "DEF" MY_END_CUSTOM MY_CURSIVE" - Identification mode. Type a character's name, and I'll tell you who it is.\n" MY_END_CUSTOM
                 MY_CYAN_AND_CURSIVE "DIF" MY_END_CUSTOM MY_CURSIVE " - Comparison mode. Name two characters,"
-                "and I will tell you how they are similar and how they differ.\n" MY_END_CUSTOM);
+                "and I will tell you how they are similar and how they differ.\n" MY_END_CUSTOM
+                MY_CYAN_AND_CURSIVE "LEAVE" MY_END_CUSTOM MY_CURSIVE " - Leave the game\n");
 }
 
-void choose_mode(tree_t* tree)
+game_error_t choose_mode(tree_t* tree)
 {
     char chosen_mode[MAX_LEN_STR] = {};
     bool is_mode_select = 0;
@@ -37,24 +38,34 @@ void choose_mode(tree_t* tree)
             tree->error |= GAME_INPUT_END;
             #endif
 
-            return;
+            return GAME_ERROR;
         }
 
         if (strcmp(chosen_mode, "GUESS") == 0)
         {
-            guess_mode(tree);
+            game_error_t res_guess = guess_mode(tree);
+            if (res_guess == GAME_ERROR) return GAME_ERROR;
+
             is_mode_select = 1;
         }
 
-        else if (strcmp(chosen_mode, "DEF") == 0)
-        {
-            define_mode();
-            is_mode_select = 1;
-        }
+        // else if (strcmp(chosen_mode, "DEF") == 0)
+        // {
+        //     define_mode();
+        //     is_mode_select = 1;
+        // }
 
-        else if (strcmp(chosen_mode, "DIF") == 0)
+        // else if (strcmp(chosen_mode, "DIF") == 0)
+        // {
+        //     difference_mode();
+        //     is_mode_select = 1;
+        // }
+
+        else if(strcmp(chosen_mode, "LEAVE") == 0)
         {
-            difference_mode();
+            game_error_t res_leave = leave_game(tree);
+            if (res_leave == GAME_ERROR) return GAME_ERROR;
+
             is_mode_select = 1;
         }
 
@@ -63,17 +74,55 @@ void choose_mode(tree_t* tree)
             sleep_print(MY_RED_AND_CURSIVE "Sorry, unknown mode\n" MY_END_CUSTOM);
         }
     }
+
+    return GAME_SUCCESS;
 }
 
-void define_mode()
+game_error_t leave_game(tree_t* tree)
 {
-    sleep_print("This mode is not ready yet\n");
+    if (tree == NULL)
+    {
+        return GAME_ERROR;
+    }
+    
+    sleep_print(MY_CURSIVE "Nu vse idi otsuda. Game closed\n" MY_CURSIVE);
+    tree_error_t res_dest = tree_destroy(tree, destroy_string_value);
+
+    #ifdef DEBUG
+    if (res_dest == TREE_ERROR)
+    {
+        return GAME_ERROR;
+    }
+    #endif
+
+    return GAME_SUCCESS;
 }
 
-void difference_mode()
-{
-    sleep_print("This mode is not ready yet\n");
-}
+// game_error_t define_mode(tree_t* tree)
+// {
+//     char user_input[MAX_LEN_STR] = {};
+//     bool is_user_chosen_character = 0;
+
+//     while (is_user_chosen_character == 0)
+//     {
+//         if (scanf("%s", user_input) == 1)
+//         {
+//             is_user_chosen_character = 1;
+//             game_error_t res_find = find_node(tree, user_input);
+//         }
+//     }
+//     return GAME_SUCCESS;
+// }
+
+// game_error_t find_node()
+// {
+
+// }
+
+// void difference_mode()
+// {
+
+// }
 
 game_error_t print_questions(tree_t* tree, node_t* node)
 {

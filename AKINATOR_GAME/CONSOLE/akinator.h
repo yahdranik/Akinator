@@ -47,16 +47,20 @@ enum game_error_codes
 
 void sleep_print(const char *string);
 void hello_and_menu();
-void choose_mode(tree_t* tree);
 void define_mode();
 void difference_mode();
 
 game_error_t reading_user_answer(tree_t* tree, bool* answer);
-
+game_error_t choose_mode(tree_t* tree);
 game_error_t guess_mode(tree_t* tree);
+game_error_t leave_game(tree_t* tree);
 game_error_t print_questions(tree_t* tree, node_t* node);
 game_error_t add_new_character(tree_t* tree, node_t* node);
 game_error_t add_text_question(tree_t* tree, char* new_question, node_t* node, char* new_character);
 game_error_t add_character_name(tree_t* tree, char* new_character);
+
+
+game_error_t main_init_and_fill_tree(tree_t* tree);
+game_error_t debug_func(tree_t* tree);
 
 #endif

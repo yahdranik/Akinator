@@ -1,22 +1,7 @@
- ("President"
-    ("for a long time"
-        ("Putin"
-        )
-        ("rule Russia"
-            ("Medvedev"
-            )
-            ("Zelenski"
-            )
-        )
+("Singer"
+    ("Russian"
+        ("Shaman")
+        ("Michael Jakson")
     )
-    ("singer"
-        ("Michael Jackson"
-        )
-        ("he is bold"
-            ("Murugov"
-            )
-            ("Ronaldo"
-            )
-        )
-    )
- )
+    ("Ronaldo")
+)

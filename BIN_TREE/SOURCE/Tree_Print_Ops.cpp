@@ -4,55 +4,67 @@ static int counter_dumps = 0;
 
 tree_error_t print_tree(FILE* file, tree_t* tree, tree_print_node_value printer)
 {
-    #ifdef DEBUG
     if (file == NULL)
     {
+        #ifdef DEBUG
         tree->error |= TREE_FILE_NOT_OPEN;
+        #endif 
+
         printf("File don`t open\n");
         return TREE_ERROR;
     }
-    #endif 
 
     size_t deep = 0;
     tree_error_t res_print_nodes = print_node(file, tree, tree->root, deep, printer);
 
-    #ifdef DEBUG
     if (res_print_nodes == TREE_ERROR)
     {
         return TREE_ERROR;
     }
-    #endif
 
     return TREE_SUCCESS;
 }
 
 tree_error_t print_node(FILE* file, tree_t* tree, const node_t* node, size_t deep, tree_print_node_value printer)
 {
-    #ifdef DEBUG
+    if (tree == NULL) return TREE_ERROR;
+
+    if (node == NULL) 
+    {
+        #ifdef DEBUG
+        tree->error |= TREE_NODE_NULL_ADRESS;
+        #endif  
+
+        return TREE_ERROR;
+    }
+
     if (file == NULL)
     {
+        #ifdef DEBUG
         tree->error |= TREE_FILE_NOT_OPEN;
         printf("File don`t open\n");
+        #endif  
+
         return TREE_ERROR;
     }
 
     if ((node->left == NULL && node->right != NULL) || (node->right == NULL && node->left != NULL))
     {
+        #ifdef DEBUG
         tree->error |= TREE_INCORRECT_NODE;
+        #endif
+
         return TREE_ERROR;
     }
-    #endif 
 
     fprintf(file, "%*s(", (int) deep, " ");
     tree_error_t res_printer = printer(file, node->value);
     fprintf(file, "\n");
 
-    #ifdef DEBUG
     if (res_printer == TREE_ERROR)
     {
         return TREE_ERROR;
     }
-    #endif
 
     if (node->left == NULL && node->right == NULL)
     {
@@ -63,12 +75,10 @@ tree_error_t print_node(FILE* file, tree_t* tree, const node_t* node, size_t dee
     tree_error_t res_print_left = print_node(file, tree, node->left, deep + 4, printer);
     tree_error_t res_print_right = print_node(file, tree, node->right, deep + 4, printer);
 
-    #ifdef DEBUG
     if (res_print_left == TREE_ERROR || res_print_right == TREE_ERROR)
     {
         return TREE_ERROR;
     }
-    #endif 
 
     fprintf(file, "%*s)\n", (int) deep, " ");
 
@@ -77,12 +87,10 @@ tree_error_t print_node(FILE* file, tree_t* tree, const node_t* node, size_t dee
 
 tree_error_t print_str(FILE* file, const void* value)
 {
-    #ifdef DEBUG
     if (value == NULL || file == NULL) 
     {
         return TREE_ERROR;
     }
-    #endif
 
     const char* str = (const char*) value;
     fprintf(file, "\"%s\"", str);
@@ -93,6 +101,8 @@ tree_error_t print_str(FILE* file, const void* value)
 #ifdef DEBUG
 void create_nodes_dot_file(FILE* dot, const node_t* node)
 {
+    if (node == NULL) return;
+    
     fprintf(dot, "n%p [fillcolor=\"#a094ef\", label=<<table border=\"0\" cellborder=\"0\" cellspacing=\"0\" cellpadding=\"4\">\n"
                  "<tr>"
                  "  <td colspan=\"2\" border=\"1\" sides=\"b\">%p</td>\n"
@@ -199,6 +209,8 @@ void tree_dump(FILE* html, const tree_t* tree, const char* file_name, const char
 
 void print_nodes_into_logs(FILE* log, node_t* node)
 {
+    if (node == NULL) return;
+
     fprintf(log, "node [ %p ]\n"
                  "value: %s\n"
                  "left node [ %p ]\n"

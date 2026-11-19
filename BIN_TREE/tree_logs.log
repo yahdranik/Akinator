@@ -1,76 +1,52 @@
 Dump was summoned in
       file: == ./AKINATOR_GAME/CONSOLE/game_main.cpp ==
-      function: == main ==
-      line: == 65 ==
+      function: == debug_func ==
+      line: == 78 ==
 
 Current parametres:
 ====== struct TREE_T ======
-       list: [0x6d0a526f0020]    
-       root: [0x6d3a53be0040]    
+       list: [0x7a1b6d8f0020]    
+       root: [0x7a4b6ede0040]    
 
 
 ===== DATA =====
-node [ 0x6d3a53be0040 ]
-value: President
-left node [ 0x6d3a53be0070 ]
-right node [ 0x6d3a53be0160 ]
+node [ 0x7a4b6ede0040 ]
+value: Singer
+left node [ 0x7a4b6ede0070 ]
+right node [ 0x7a4b6ede0100 ]
 
 
-node [ 0x6d3a53be0070 ]
-value: for a long time
-left node [ 0x6d3a53be00a0 ]
-right node [ 0x6d3a53be00d0 ]
+node [ 0x7a4b6ede0070 ]
+value: Russian
+left node [ 0x7a4b6ede00a0 ]
+right node [ 0x7a4b6ede00d0 ]
 
 
-node [ 0x6d3a53be00a0 ]
-value: Putin
+node [ 0x7a4b6ede00a0 ]
+value: youth
+left node [ 0x7a4b6ede0130 ]
+right node [ 0x7a4b6ede0160 ]
+
+
+node [ 0x7a4b6ede0130 ]
+value: Dima Bilan
 left node [ (nil) ]
 right node [ (nil) ]
 
 
-node [ 0x6d3a53be00d0 ]
-value: rule Russia
-left node [ 0x6d3a53be0100 ]
-right node [ 0x6d3a53be0130 ]
-
-
-node [ 0x6d3a53be0100 ]
-value: Medvedev
+node [ 0x7a4b6ede0160 ]
+value: Shaman
 left node [ (nil) ]
 right node [ (nil) ]
 
 
-node [ 0x6d3a53be0130 ]
-value: Zelenski
+node [ 0x7a4b6ede00d0 ]
+value: Michael Jakson
 left node [ (nil) ]
 right node [ (nil) ]
 
 
-node [ 0x6d3a53be0160 ]
-value: singer
-left node [ 0x6d3a53be0190 ]
-right node [ 0x6d3a53be01c0 ]
-
-
-node [ 0x6d3a53be0190 ]
-value: Michael Jackson
-left node [ (nil) ]
-right node [ (nil) ]
-
-
-node [ 0x6d3a53be01c0 ]
-value: he is bold
-left node [ 0x6d3a53be01f0 ]
-right node [ 0x6d3a53be0220 ]
-
-
-node [ 0x6d3a53be01f0 ]
-value: Murugov
-left node [ (nil) ]
-right node [ (nil) ]
-
-
-node [ 0x6d3a53be0220 ]
+node [ 0x7a4b6ede0100 ]
 value: Ronaldo
 left node [ (nil) ]
 right node [ (nil) ]

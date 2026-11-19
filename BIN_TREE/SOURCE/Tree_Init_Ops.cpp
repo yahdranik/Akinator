@@ -2,8 +2,9 @@
 
 tree_error_t tree_init(tree_t* tree)
 {
-    #ifdef DEBUG
     if (tree == NULL) return TREE_ERROR;
+
+    #ifdef DEBUG
     tree->error = TREE_OK;
     #endif
 
@@ -14,45 +15,46 @@ tree_error_t tree_init(tree_t* tree)
 
 tree_error_t node_create(tree_t* tree, node_t** node, void* value)
 {
-    #ifdef DEBUG 
     if (tree == NULL) return TREE_ERROR;
 
     if (node == NULL )
     {
+        #ifdef DEBUG 
         tree->error |= TREE_NODE_NULL_ADRESS;
+        #endif 
+
         return TREE_ERROR;
     }
-    #endif
 
     *node  = (node_t*) calloc(1, sizeof(node_t));
     
-    #ifdef DEBUG
     if ((*node) == NULL)
     {
+        #ifdef DEBUG
         tree->error |= TREE_NOT_MEMORY;
+        #endif 
+
         return TREE_ERROR;
     }
-    #endif
 
     tree_error_t res_init_node = node_init(tree, *node, value);
 
-    #ifdef DEBUG
     if (res_init_node == TREE_ERROR) return TREE_ERROR;
-    #endif
 
     return TREE_SUCCESS;
 }
 
 tree_error_t node_init(tree_t* tree, node_t* node, void* value)
 {
-    #ifdef DEBUG
     if (tree == NULL) return TREE_ERROR;
     if (node == NULL)
     {
+        #ifdef DEBUG
         tree->error |= TREE_NODE_NULL_ADRESS;
+        #endif
+
         return TREE_ERROR;
     }
-    #endif
 
     node->value = value;
     node->left  = NULL;
@@ -63,20 +65,23 @@ tree_error_t node_init(tree_t* tree, node_t* node, void* value)
 
 tree_error_t node_destroy(tree_t* tree, node_t** node, tree_destroy_node_value destroyer)
 {
-    #ifdef DEBUG
     if (tree == NULL) return TREE_ERROR;
     if (node == NULL)
     {
+        #ifdef DEBUG
         tree->error |= TREE_NODE_NULL_ADRESS;
+        #endif
+
         return TREE_ERROR;
     }
 
     if (destroyer == NULL)
     {
+        #ifdef DEBUG
         tree->error |= TREE_NULL_FUNC_DEST;
+        #endif
         return TREE_ERROR;
     }
-    #endif
 
     if (*node ==  NULL)
     {
@@ -91,24 +96,20 @@ tree_error_t node_destroy(tree_t* tree, node_t** node, tree_destroy_node_value d
     free(*node);
     *node = NULL;
 
-    #ifdef DEBUG 
     if (res_left_destroy == TREE_ERROR || res_right_destroy == TREE_ERROR)
     {
         return TREE_ERROR;
     }
-    #endif
 
     return TREE_SUCCESS;
 }
 
 tree_error_t destroy_string_value(void* value)
 {
-    #ifdef DEBUG
     if (value == NULL) 
     {
         return TREE_ERROR;
     }
-    #endif
 
     char* buf = (char*) value;
     memset(buf, 0, strlen(buf));
@@ -124,9 +125,7 @@ tree_error_t tree_destroy(tree_t* tree, tree_destroy_node_value destroyer)
 
     tree_error_t res_root_dest = node_destroy(tree, &tree->root, destroyer);
 
-    #ifdef DEBUG
     if (res_root_dest == TREE_ERROR) return TREE_ERROR;
-    #endif 
 
     return TREE_SUCCESS;
 }
