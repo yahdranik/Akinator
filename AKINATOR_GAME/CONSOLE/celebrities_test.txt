@@ -1,0 +1,22 @@
+ ("President"
+    ("for a long time"
+        ("Putin"
+        )
+        ("rule Russia"
+            ("Medvedev"
+            )
+            ("Zelenski"
+            )
+        )
+    )
+    ("singer"
+        ("Michael Jackson"
+        )
+        ("he is bold"
+            ("Murugov"
+            )
+            ("Ronaldo"
+            )
+        )
+    )
+ )

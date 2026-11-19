@@ -1,6 +1,4 @@
-#include "HEADERS/Tree_Fill_Ops.h"
-#include "HEADERS/Tree_Init_Ops.h"
-#include "HEADERS/Tree_Dest_Ops.h"
+#include "../HEADERS/Tree_Fill_Ops.h"
 
 ssize_t get_file_size(const char* NAME)
 {
@@ -17,7 +15,7 @@ ssize_t get_file_size(const char* NAME)
     return size_of_file;
 }
 
-tree_error_t read_from_file(FILE* file, tree_t* tree, char** buffer)
+tree_error_t read_from_file(FILE* file, tree_t* tree, char** buffer, const char* file_name)
 {
     #ifdef DEBUG 
     if (tree == NULL) return TREE_ERROR;
@@ -29,7 +27,7 @@ tree_error_t read_from_file(FILE* file, tree_t* tree, char** buffer)
     }
     #endif 
 
-    ssize_t file_size = get_file_size(INPUT_TEST_FILE);
+    ssize_t file_size = get_file_size(file_name);
 
     #ifdef DEBUG 
     if (file_size == UNVALIBLE_FILE_SIZE)
@@ -39,7 +37,7 @@ tree_error_t read_from_file(FILE* file, tree_t* tree, char** buffer)
     }
     #endif
 
-    *buffer = (char*) calloc(file_size + 1, sizeof(char));
+    *buffer = (char*) calloc((size_t) file_size + 1, sizeof(char));
 
     #ifdef DEBUG
     if (buffer == NULL)
@@ -49,10 +47,10 @@ tree_error_t read_from_file(FILE* file, tree_t* tree, char** buffer)
     }
     #endif
 
-    ssize_t elem_reads = fread(*buffer, sizeof(char), file_size, file);
+    size_t elem_reads = fread(*buffer, sizeof(char), (size_t) file_size, file);
 
     #ifdef DEBUG
-    if (elem_reads < 0)
+    if (elem_reads == 0)
     {
         tree->error |= TREE_FILE_READ_FAILING;
         free(buffer);
@@ -63,7 +61,7 @@ tree_error_t read_from_file(FILE* file, tree_t* tree, char** buffer)
     return TREE_SUCCESS;
 }
 
-tree_error_t fill_tree(FILE* file, tree_t* tree)
+tree_error_t fill_tree(FILE* file, tree_t* tree, const char* file_name)
 {
     #ifdef DEBUG
     if (tree == NULL) return TREE_ERROR;
@@ -75,7 +73,7 @@ tree_error_t fill_tree(FILE* file, tree_t* tree)
     #endif
 
     char* buffer = {};
-    tree_error_t res_of_read = read_from_file(file, tree, &buffer);
+    tree_error_t res_of_read = read_from_file(file, tree, &buffer, file_name);
 
     #ifdef DEBUG
     if (res_of_read == TREE_ERROR)
@@ -88,18 +86,18 @@ tree_error_t fill_tree(FILE* file, tree_t* tree)
 
     tree_error_t res_of_fill = read_node(tree, &tree->root, &position);
 
+    #ifdef DEBUG
     if (res_of_fill == TREE_SUCCESS)
     {
         skip_spaces(&position);
 
-        #ifdef DEBUG
         if (*position != '\0')
         {
             tree->error |= FILE_TREE_SYNTAX_ERROR;
             res_of_fill = TREE_ERROR;
         }
-        #endif
     }
+    #endif
 
     FREE_MASS(buffer);
 
@@ -173,10 +171,12 @@ tree_error_t read_string(tree_t* tree, char** position, char** read_str)
 
 tree_error_t read_node(tree_t* tree, node_t** node, char** position)
 {
+    #ifdef DEBUG
     if (tree == NULL || node == NULL || position == NULL || *position == NULL)
     {
         return TREE_ERROR;
     }
+    #endif
 
     if (expect_char(tree, position, '(') == TREE_ERROR)
     {

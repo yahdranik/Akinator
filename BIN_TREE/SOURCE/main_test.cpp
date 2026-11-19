@@ -1,7 +1,6 @@
-#include "C:\Users\MilanaGlav\.vscode\Akinator\Akinator\BIN_TREE\HEADERS\Tree_Init_Ops.h"
-#include "C:\Users\MilanaGlav\.vscode\Akinator\Akinator\BIN_TREE\HEADERS\Tree_Fill_Ops.h"
-#include "C:\Users\MilanaGlav\.vscode\Akinator\Akinator\BIN_TREE\HEADERS\Tree_Print_Ops.h"
-#include "C:\Users\MilanaGlav\.vscode\Akinator\Akinator\BIN_TREE\HEADERS\Tree_Dest_Ops.h"
+#include "../HEADERS/Tree_Init_Ops.h"
+#include "../HEADERS/Tree_Fill_Ops.h"
+#include "../HEADERS/Tree_Print_Ops.h"
 
 int main()
 {
@@ -12,7 +11,7 @@ int main()
     tree_t tree = {};
 
     tree_init(&tree);
-    fill_tree(file_tree, &tree);
+    fill_tree(file_tree, &tree, INPUT_TEST_FILE);
 
     print_tree(out_file_tree, &tree, print_str);
     

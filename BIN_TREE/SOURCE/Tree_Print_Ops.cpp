@@ -1,4 +1,6 @@
-#include "HEADERS/Tree_Print_Ops.h"
+#include "../HEADERS/Tree_Print_Ops.h"
+
+static int counter_dumps = 0;
 
 tree_error_t print_tree(FILE* file, tree_t* tree, tree_print_node_value printer)
 {
@@ -82,7 +84,7 @@ tree_error_t print_str(FILE* file, const void* value)
     }
     #endif
 
-    char* str = (char*) value;
+    const char* str = (const char*) value;
     fprintf(file, "\"%s\"", str);
 
     return TREE_SUCCESS;
@@ -91,7 +93,19 @@ tree_error_t print_str(FILE* file, const void* value)
 #ifdef DEBUG
 void create_nodes_dot_file(FILE* dot, const node_t* node)
 {
-    fprintf(dot, "n%p [label=\"%s\", color=blue, style=filled, fillcolor=\"#dcaee8\"];\n", node, (char*) node->value);
+    fprintf(dot, "n%p [fillcolor=\"#a094ef\", label=<<table border=\"0\" cellborder=\"0\" cellspacing=\"0\" cellpadding=\"4\">\n"
+                 "<tr>"
+                 "  <td colspan=\"2\" border=\"1\" sides=\"b\">%p</td>\n"
+                 "</tr>\n"
+                 "<tr>"
+                 "  <td colspan=\"2\" border=\"1\" sides=\"b\"><b>%s</b></td>\n"
+                 "</tr>\n"
+                 "<tr>"
+                 "  <td border=\"1\" sides=\"r\"><b>LEFT:</b> %p</td>\n"
+                 "  <td><b>RIGHT:</b> %p</td>\n"
+                 "</tr>\n"
+                 "</table>>];\n", 
+                 node, node, (char*) node->value, node->left, node->right);
 
     if (node->left == NULL && node->right == NULL)
     {
@@ -101,8 +115,8 @@ void create_nodes_dot_file(FILE* dot, const node_t* node)
     create_nodes_dot_file(dot, node->left);
     create_nodes_dot_file(dot, node->right);
 
-    fprintf(dot, "n%p -> n%p [label = \"Да\"];\n", node, node->left);
-    fprintf(dot, "n%p -> n%p [label = \"Нет\"];\n", node, node->right);
+    fprintf(dot, "n%p -> n%p [label = \"yes\"];\n", node, node->left);
+    fprintf(dot, "n%p -> n%p [label = \"no\"];\n", node, node->right);
 }
 
 void create_tree_dot_file(FILE* dot, const tree_t* tree)
@@ -114,7 +128,7 @@ void create_tree_dot_file(FILE* dot, const tree_t* tree)
                  "ordering=out;\n"
                  "nodesep=1.;\n"
                  "ranksep=1.;\n");
-    fprintf(dot, "node [fontsize=12, shape=box, style=\"filled, rounded\", color=\"#23033a\", fontname=\"DejaVu Sans\"];\n");
+    fprintf(dot, "node [fontsize=12, shape=box, style=\"filled, rounded\", color=\"#4a3056\", fontname=\"DejaVu Sans\"];\n");
     fprintf(dot, "edge [labelfloat=false];\n\n");
 
     create_nodes_dot_file(dot, tree->root);
@@ -138,8 +152,13 @@ void tree_dump(FILE* html, const tree_t* tree, const char* file_name, const char
 
     fprintf(log,"====== struct TREE_T ======\n"
                 "       list: [%p]    \n"
-                "       root: [%p]    \n",
+                "       root: [%p]    \n\n\n",
                 tree, tree->root);
+    fprintf(log, "===== DATA =====\n");
+
+// PRINT DATA -----------------------------------------------------------------------
+
+    print_nodes_into_logs(log, tree->root);
 
 // GRAPHIC DUMP ---------------------------------------------------------------------
 
@@ -148,10 +167,10 @@ void tree_dump(FILE* html, const tree_t* tree, const char* file_name, const char
     fclose(dot);
 
     char file_name_listing[1000] = {};
-    char script[1000] = {};
+    char script[1030] = {};
     
     snprintf(file_name_listing, 1000, "report/tree%d.png",  counter_dumps);
-    snprintf(script, 1000, "dot -Tpng " DOT_FILE " -o %s", file_name_listing);
+    snprintf(script, 1030, "dot -Tpng " DOT_FILE " -o BIN_TREE/%s", file_name_listing);
 
     system(script);
 
@@ -160,7 +179,7 @@ void tree_dump(FILE* html, const tree_t* tree, const char* file_name, const char
     fflush(log);
 
     FILE* text_file = fopen(LOG_FILE, "r");
-    fprintf(html, "<img src=\"%s\" width=\"100%%\">\n", file_name_listing);
+    fprintf(html, "<img src=\"%s\" width=\"50%%\" alt=\"Dump %d\">\n", file_name_listing, counter_dumps);
     fprintf(html, "<pre>\n");
 
     int c = 0;
@@ -177,5 +196,23 @@ void tree_dump(FILE* html, const tree_t* tree, const char* file_name, const char
 
     counter_dumps++;
 }
+
+void print_nodes_into_logs(FILE* log, node_t* node)
+{
+    fprintf(log, "node [ %p ]\n"
+                 "value: %s\n"
+                 "left node [ %p ]\n"
+                 "right node [ %p ]\n\n\n",
+                node, (char*) node->value, node->left, node->right);
+
+    if (node->left != NULL && node->right != NULL)
+    {
+        print_nodes_into_logs(log, node->left);
+        print_nodes_into_logs(log, node->right);
+    }
+
+    return;
+}
+
 #endif
 

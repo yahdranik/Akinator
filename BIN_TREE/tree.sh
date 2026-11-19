@@ -8,4 +8,4 @@ g++ -D _DEBUG -ggdb3 -std=c++17 -Wall -Wextra -Weffc++ -Waggressive-loop-optimiz
 -Wno-old-style-cast -Wno-varargs -Wstack-protector -fcheck-new -fsized-deallocation -fstack-protector -fstrict-overflow \
 -flto-odr-type-merging -fno-omit-frame-pointer -pie -fPIE -Werror=vla \
 -fsanitize=address,alignment,bool,bounds,enum,float-cast-overflow,float-divide-by-zero,integer-divide-by-zero,leak,nonnull-attribute,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,undefined,unreachable,vla-bound,vptr \
-./main_test.cpp Tree_Dest_Ops.cpp Tree_Fill_Ops.cpp Tree_Init_Ops.cpp Tree_Print_Ops.cpp -o main_mimimi.exe
+./BIN_TREE/SOURCE/main_test.cpp BIN_TREE/SOURCE/Tree_Fill_Ops.cpp BIN_TREE/SOURCE/Tree_Init_Ops.cpp BIN_TREE/SOURCE/Tree_Print_Ops.cpp -o main_mimimi.exe
