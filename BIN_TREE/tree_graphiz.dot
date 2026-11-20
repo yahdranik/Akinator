@@ -9,35 +9,35 @@ ranksep=1.;
 node [fontsize=12, shape=box, style="filled, rounded", color="#4a3056", fontname="DejaVu Sans"];
 edge [labelfloat=false];
 
-n0x7a4b6ede0040 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7a4b6ede0040</td>
+n0x7928571e0040 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e0040</td>
 </tr>
 <tr>  <td colspan="2" border="1" sides="b"><b>Singer</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7a4b6ede0070</td>
-  <td><b>RIGHT:</b> 0x7a4b6ede0100</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7928571e0070</td>
+  <td><b>RIGHT:</b> 0x7928571e01c0</td>
 </tr>
 </table>>];
-n0x7a4b6ede0070 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7a4b6ede0070</td>
+n0x7928571e0070 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e0070</td>
 </tr>
 <tr>  <td colspan="2" border="1" sides="b"><b>Russian</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7a4b6ede00a0</td>
-  <td><b>RIGHT:</b> 0x7a4b6ede00d0</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7928571e00a0</td>
+  <td><b>RIGHT:</b> 0x7928571e0130</td>
 </tr>
 </table>>];
-n0x7a4b6ede00a0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7a4b6ede00a0</td>
+n0x7928571e00a0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e00a0</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>youth</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>brunet</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7a4b6ede0130</td>
-  <td><b>RIGHT:</b> 0x7a4b6ede0160</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7928571e00d0</td>
+  <td><b>RIGHT:</b> 0x7928571e0100</td>
 </tr>
 </table>>];
-n0x7a4b6ede0130 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7a4b6ede0130</td>
+n0x7928571e00d0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e00d0</td>
 </tr>
 <tr>  <td colspan="2" border="1" sides="b"><b>Dima Bilan</b></td>
 </tr>
@@ -45,8 +45,8 @@ n0x7a4b6ede0130 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" ce
   <td><b>RIGHT:</b> (nil)</td>
 </tr>
 </table>>];
-n0x7a4b6ede0160 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7a4b6ede0160</td>
+n0x7928571e0100 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e0100</td>
 </tr>
 <tr>  <td colspan="2" border="1" sides="b"><b>Shaman</b></td>
 </tr>
@@ -54,10 +54,28 @@ n0x7a4b6ede0160 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" ce
   <td><b>RIGHT:</b> (nil)</td>
 </tr>
 </table>>];
-n0x7a4b6ede00a0 -> n0x7a4b6ede0130 [label = "yes"];
-n0x7a4b6ede00a0 -> n0x7a4b6ede0160 [label = "no"];
-n0x7a4b6ede00d0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7a4b6ede00d0</td>
+n0x7928571e00a0 -> n0x7928571e00d0 [label = "yes"];
+n0x7928571e00a0 -> n0x7928571e0100 [label = "no"];
+n0x7928571e0130 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e0130</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>woman</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7928571e0160</td>
+  <td><b>RIGHT:</b> 0x7928571e0190</td>
+</tr>
+</table>>];
+n0x7928571e0160 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e0160</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Lana Del Ray</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> (nil)</td>
+  <td><b>RIGHT:</b> (nil)</td>
+</tr>
+</table>>];
+n0x7928571e0190 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e0190</td>
 </tr>
 <tr>  <td colspan="2" border="1" sides="b"><b>Michael Jakson</b></td>
 </tr>
@@ -65,10 +83,30 @@ n0x7a4b6ede00d0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" ce
   <td><b>RIGHT:</b> (nil)</td>
 </tr>
 </table>>];
-n0x7a4b6ede0070 -> n0x7a4b6ede00a0 [label = "yes"];
-n0x7a4b6ede0070 -> n0x7a4b6ede00d0 [label = "no"];
-n0x7a4b6ede0100 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7a4b6ede0100</td>
+n0x7928571e0130 -> n0x7928571e0160 [label = "yes"];
+n0x7928571e0130 -> n0x7928571e0190 [label = "no"];
+n0x7928571e0070 -> n0x7928571e00a0 [label = "yes"];
+n0x7928571e0070 -> n0x7928571e0130 [label = "no"];
+n0x7928571e01c0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e01c0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>president</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7928571e01f0</td>
+  <td><b>RIGHT:</b> 0x7928571e0220</td>
+</tr>
+</table>>];
+n0x7928571e01f0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e01f0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Putin</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> (nil)</td>
+  <td><b>RIGHT:</b> (nil)</td>
+</tr>
+</table>>];
+n0x7928571e0220 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0x7928571e0220</td>
 </tr>
 <tr>  <td colspan="2" border="1" sides="b"><b>Ronaldo</b></td>
 </tr>
@@ -76,6 +114,8 @@ n0x7a4b6ede0100 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" ce
   <td><b>RIGHT:</b> (nil)</td>
 </tr>
 </table>>];
-n0x7a4b6ede0040 -> n0x7a4b6ede0070 [label = "yes"];
-n0x7a4b6ede0040 -> n0x7a4b6ede0100 [label = "no"];
+n0x7928571e01c0 -> n0x7928571e01f0 [label = "yes"];
+n0x7928571e01c0 -> n0x7928571e0220 [label = "no"];
+n0x7928571e0040 -> n0x7928571e0070 [label = "yes"];
+n0x7928571e0040 -> n0x7928571e01c0 [label = "no"];
 }

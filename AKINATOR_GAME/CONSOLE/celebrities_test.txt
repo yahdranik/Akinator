@@ -1,7 +1,22 @@
-("Singer"
+ ("Singer"
     ("Russian"
-        ("Shaman")
-        ("Michael Jakson")
+        ("brunet"
+            ("Dima Bilan"
+            )
+            ("Shaman"
+            )
+        )
+        ("woman"
+            ("Lana Del Ray"
+            )
+            ("Michael Jakson"
+            )
+        )
     )
-    ("Ronaldo")
-)
+    ("president"
+        ("Putin"
+        )
+        ("Ronaldo"
+        )
+    )
+ )

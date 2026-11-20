@@ -14,6 +14,8 @@
 
 #define TEST_FILE "AKINATOR_GAME/CONSOLE/celebrities_test.txt"
 
+#define MAX_PATH_SIZE 100
+
 #define MY_END_CUSTOM          "\033[0m"
 #define MY_BLUE_AND_CURSIVE    "\033[3;34m"
 #define MY_RED_AND_CURSIVE     "\033[3;31m"
@@ -31,6 +33,12 @@
 const int TIME_TO_SLEEP = 10;
 const int MAX_LEN_STR   = 64;
 
+typedef struct
+{
+    node_t* question_node;
+    bool answer;
+} path_step_t;
+
 enum game_error_t
 {
     GAME_SUCCESS = 0,
@@ -46,10 +54,11 @@ enum game_error_codes
 // PROTOTYPES ----------------------------------------------------------
 
 void sleep_print(const char *string);
-void hello_and_menu();
-void define_mode();
-void difference_mode();
+void hello();
+void menu();
 
+game_error_t find_node(tree_t* tree, const void* value);
+game_error_t play_again(tree_t* tree, bool* answer);
 game_error_t reading_user_answer(tree_t* tree, bool* answer);
 game_error_t choose_mode(tree_t* tree);
 game_error_t guess_mode(tree_t* tree);
@@ -58,9 +67,12 @@ game_error_t print_questions(tree_t* tree, node_t* node);
 game_error_t add_new_character(tree_t* tree, node_t* node);
 game_error_t add_text_question(tree_t* tree, char* new_question, node_t* node, char* new_character);
 game_error_t add_character_name(tree_t* tree, char* new_character);
-
+game_error_t find_node(node_t* node, const char* value, node_t** found_node, path_step_t* path, size_t* path_size);
+game_error_t difference_mode(tree_t* tree);
+game_error_t define_mode(tree_t* tree);
 
 game_error_t main_init_and_fill_tree(tree_t* tree);
 game_error_t debug_func(tree_t* tree);
+game_error_t main_print_tree(tree_t* tree);
 
 #endif
