@@ -1,78 +1,330 @@
 Dump was summoned in
-      file: == ./AKINATOR_GAME/CONSOLE/game_main.cpp ==
-      function: == debug_func ==
-      line: == 78 ==
+      file: == AKINATOR_GAME/GAME_APP/app_main.cpp ==
+      function: == main ==
+      line: == 44 ==
 
 Current parametres:
 ====== struct TREE_T ======
-       list: [0x78f855df0040]    
-       root: [0x7928571e0040]    
+       list: [0000009BF03FFAC8]    
+       root: [00000274CB7D4CB0]    
 
 
 ===== DATA =====
-node [ 0x7928571e0040 ]
-value: Singer
-left node [ 0x7928571e0070 ]
-right node [ 0x7928571e01c0 ]
+node [ 00000274CB7D4CB0 ]
+value: Is this a person
+left node [ 00000274CB7D4E30 ]
+right node [ 00000274CB7EA400 ]
 
 
-node [ 0x7928571e0070 ]
-value: Russian
-left node [ 0x7928571e00a0 ]
-right node [ 0x7928571e0130 ]
+node [ 00000274CB7D4E30 ]
+value: Is this a princess or a queen
+left node [ 00000274CB7D4D10 ]
+right node [ 00000274CB7C6690 ]
 
 
-node [ 0x7928571e00a0 ]
-value: brunet
-left node [ 0x7928571e00d0 ]
-right node [ 0x7928571e0100 ]
+node [ 00000274CB7D4D10 ]
+value: Is this a blonde
+left node [ 00000274CB7D4810 ]
+right node [ 00000274CB7D4930 ]
 
 
-node [ 0x7928571e00d0 ]
-value: Dima Bilan
-left node [ (nil) ]
-right node [ (nil) ]
+node [ 00000274CB7D4810 ]
+value: Is this from Frozen
+left node [ 00000274CB7D4B70 ]
+right node [ 00000274CB7D48F0 ]
 
 
-node [ 0x7928571e0100 ]
-value: Shaman
-left node [ (nil) ]
-right node [ (nil) ]
+node [ 00000274CB7D4B70 ]
+value: Is this Elsa
+left node [ 00000274CB7D4830 ]
+right node [ 00000274CB7D4CD0 ]
 
 
-node [ 0x7928571e0130 ]
-value: woman
-left node [ 0x7928571e0160 ]
-right node [ 0x7928571e0190 ]
+node [ 00000274CB7D4830 ]
+value: Elsa
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
 
 
-node [ 0x7928571e0160 ]
-value: Lana Del Ray
-left node [ (nil) ]
-right node [ (nil) ]
+node [ 00000274CB7D4CD0 ]
+value: Anna
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
 
 
-node [ 0x7928571e0190 ]
-value: Michael Jakson
-left node [ (nil) ]
-right node [ (nil) ]
+node [ 00000274CB7D48F0 ]
+value: Is this from Rapunzel
+left node [ 00000274CB7D4910 ]
+right node [ 00000274CB7D4CF0 ]
 
 
-node [ 0x7928571e01c0 ]
-value: president
-left node [ 0x7928571e01f0 ]
-right node [ 0x7928571e0220 ]
+node [ 00000274CB7D4910 ]
+value: Rapunzel
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
 
 
-node [ 0x7928571e01f0 ]
-value: Putin
-left node [ (nil) ]
-right node [ (nil) ]
+node [ 00000274CB7D4CF0 ]
+value: Is this from Aurora
+left node [ 00000274CB7D4A90 ]
+right node [ 00000274CB7D4D50 ]
 
 
-node [ 0x7928571e0220 ]
-value: Ronaldo
-left node [ (nil) ]
-right node [ (nil) ]
+node [ 00000274CB7D4A90 ]
+value: Aurora
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7D4D50 ]
+value: Cinderella
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7D4930 ]
+value: Is this red-haired
+left node [ 00000274CB7D4E90 ]
+right node [ 00000274CB7D4AF0 ]
+
+
+node [ 00000274CB7D4E90 ]
+value: Is this from The Little Mermaid
+left node [ 00000274CB7D4D70 ]
+right node [ 00000274CB7D4E50 ]
+
+
+node [ 00000274CB7D4D70 ]
+value: Ariel
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7D4E50 ]
+value: Merida
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7D4AF0 ]
+value: Is this dark-haired
+left node [ 00000274CB7D4D90 ]
+right node [ 00000274CB7D4BD0 ]
+
+
+node [ 00000274CB7D4D90 ]
+value: Is this from Aladdin
+left node [ 00000274CB7D4EB0 ]
+right node [ 00000274CB7D4C30 ]
+
+
+node [ 00000274CB7D4EB0 ]
+value: Jasmine
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7D4C30 ]
+value: Is this from Mulan
+left node [ 00000274CB7D49D0 ]
+right node [ 00000274CB7D4DB0 ]
+
+
+node [ 00000274CB7D49D0 ]
+value: Mulan
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7D4DB0 ]
+value: Is this from The Princess and the Frog
+left node [ 00000274CB7D49F0 ]
+right node [ 00000274CB7D4DD0 ]
+
+
+node [ 00000274CB7D49F0 ]
+value: Tiana
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7D4DD0 ]
+value: Is this Moana
+left node [ 00000274CB7D4DF0 ]
+right node [ 00000274CB7D4B50 ]
+
+
+node [ 00000274CB7D4DF0 ]
+value: Moana
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7D4B50 ]
+value: Is this Pocahontas
+left node [ 00000274CB7D4B10 ]
+right node [ 00000274CB7D4B90 ]
+
+
+node [ 00000274CB7D4B10 ]
+value: Pocahontas
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7D4B90 ]
+value: Snow White
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7D4BD0 ]
+value: Belle
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7C6690 ]
+value: Is this from Aladdin
+left node [ 00000274CB7EA840 ]
+right node [ 00000274CB7EA9C0 ]
+
+
+node [ 00000274CB7EA840 ]
+value: Aladdin
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA9C0 ]
+value: Mowgli
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA400 ]
+value: Is this from Winnie the Pooh
+left node [ 00000274CB7EA700 ]
+right node [ 00000274CB7EA800 ]
+
+
+node [ 00000274CB7EA700 ]
+value: Is this Winnie
+left node [ 00000274CB7EA2E0 ]
+right node [ 00000274CB7EA260 ]
+
+
+node [ 00000274CB7EA2E0 ]
+value: Winnie the Pooh
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA260 ]
+value: Is this Piglet
+left node [ 00000274CB7EA820 ]
+right node [ 00000274CB7EA280 ]
+
+
+node [ 00000274CB7EA820 ]
+value: Piglet
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA280 ]
+value: Is this Tigger
+left node [ 00000274CB7EA300 ]
+right node [ 00000274CB7EA380 ]
+
+
+node [ 00000274CB7EA300 ]
+value: Tigger
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA380 ]
+value: Eeyore
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA800 ]
+value: Is this a lion
+left node [ 00000274CB7EA320 ]
+right node [ 00000274CB7EA720 ]
+
+
+node [ 00000274CB7EA320 ]
+value: Is this Simba
+left node [ 00000274CB7EA680 ]
+right node [ 00000274CB7EA580 ]
+
+
+node [ 00000274CB7EA680 ]
+value: Simba
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA580 ]
+value: Nala
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA720 ]
+value: Is this a mouse
+left node [ 00000274CB7EA340 ]
+right node [ 00000274CB7EA2C0 ]
+
+
+node [ 00000274CB7EA340 ]
+value: Is this Mickey
+left node [ 00000274CB7EA3C0 ]
+right node [ 00000274CB7EA4A0 ]
+
+
+node [ 00000274CB7EA3C0 ]
+value: Mickey Mouse
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA4A0 ]
+value: Minnie Mouse
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA2C0 ]
+value: Is this a duck
+left node [ 00000274CB7EA520 ]
+right node [ 00000274CB7EA420 ]
+
+
+node [ 00000274CB7EA520 ]
+value: Donald Duck
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA420 ]
+value: Is this Stitch
+left node [ 00000274CB7EA740 ]
+right node [ 00000274CB7EA440 ]
+
+
+node [ 00000274CB7EA740 ]
+value: Stitch
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
+
+
+node [ 00000274CB7EA440 ]
+value: Dumbo
+left node [ 0000000000000000 ]
+right node [ 0000000000000000 ]
 
 

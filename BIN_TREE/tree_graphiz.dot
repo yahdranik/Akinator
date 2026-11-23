@@ -9,113 +9,533 @@ ranksep=1.;
 node [fontsize=12, shape=box, style="filled, rounded", color="#4a3056", fontname="DejaVu Sans"];
 edge [labelfloat=false];
 
-n0x7928571e0040 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e0040</td>
+n00000274CB7D4CB0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4CB0</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Singer</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this a person</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7928571e0070</td>
-  <td><b>RIGHT:</b> 0x7928571e01c0</td>
-</tr>
-</table>>];
-n0x7928571e0070 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e0070</td>
-</tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Russian</b></td>
-</tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7928571e00a0</td>
-  <td><b>RIGHT:</b> 0x7928571e0130</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4E30</td>
+  <td><b>RIGHT:</b> 00000274CB7EA400</td>
 </tr>
 </table>>];
-n0x7928571e00a0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e00a0</td>
+n00000274CB7D4E30 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4E30</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>brunet</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this a princess or a queen</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7928571e00d0</td>
-  <td><b>RIGHT:</b> 0x7928571e0100</td>
-</tr>
-</table>>];
-n0x7928571e00d0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e00d0</td>
-</tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Dima Bilan</b></td>
-</tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> (nil)</td>
-  <td><b>RIGHT:</b> (nil)</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4D10</td>
+  <td><b>RIGHT:</b> 00000274CB7C6690</td>
 </tr>
 </table>>];
-n0x7928571e0100 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e0100</td>
+n00000274CB7D4D10 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4D10</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Shaman</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this a blonde</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> (nil)</td>
-  <td><b>RIGHT:</b> (nil)</td>
-</tr>
-</table>>];
-n0x7928571e00a0 -> n0x7928571e00d0 [label = "yes"];
-n0x7928571e00a0 -> n0x7928571e0100 [label = "no"];
-n0x7928571e0130 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e0130</td>
-</tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>woman</b></td>
-</tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7928571e0160</td>
-  <td><b>RIGHT:</b> 0x7928571e0190</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4810</td>
+  <td><b>RIGHT:</b> 00000274CB7D4930</td>
 </tr>
 </table>>];
-n0x7928571e0160 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e0160</td>
+n00000274CB7D4810 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4810</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Lana Del Ray</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this from Frozen</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> (nil)</td>
-  <td><b>RIGHT:</b> (nil)</td>
-</tr>
-</table>>];
-n0x7928571e0190 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e0190</td>
-</tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Michael Jakson</b></td>
-</tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> (nil)</td>
-  <td><b>RIGHT:</b> (nil)</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4B70</td>
+  <td><b>RIGHT:</b> 00000274CB7D48F0</td>
 </tr>
 </table>>];
-n0x7928571e0130 -> n0x7928571e0160 [label = "yes"];
-n0x7928571e0130 -> n0x7928571e0190 [label = "no"];
-n0x7928571e0070 -> n0x7928571e00a0 [label = "yes"];
-n0x7928571e0070 -> n0x7928571e0130 [label = "no"];
-n0x7928571e01c0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e01c0</td>
+n00000274CB7D4B70 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4B70</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>president</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this Elsa</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0x7928571e01f0</td>
-  <td><b>RIGHT:</b> 0x7928571e0220</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4830</td>
+  <td><b>RIGHT:</b> 00000274CB7D4CD0</td>
 </tr>
 </table>>];
-n0x7928571e01f0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e01f0</td>
+n00000274CB7D4830 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4830</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Putin</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>Elsa</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> (nil)</td>
-  <td><b>RIGHT:</b> (nil)</td>
-</tr>
-</table>>];
-n0x7928571e0220 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0x7928571e0220</td>
-</tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Ronaldo</b></td>
-</tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> (nil)</td>
-  <td><b>RIGHT:</b> (nil)</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
 </tr>
 </table>>];
-n0x7928571e01c0 -> n0x7928571e01f0 [label = "yes"];
-n0x7928571e01c0 -> n0x7928571e0220 [label = "no"];
-n0x7928571e0040 -> n0x7928571e0070 [label = "yes"];
-n0x7928571e0040 -> n0x7928571e01c0 [label = "no"];
+n00000274CB7D4CD0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4CD0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Anna</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4B70 -> n00000274CB7D4830 [label = "yes"];
+n00000274CB7D4B70 -> n00000274CB7D4CD0 [label = "no"];
+n00000274CB7D48F0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D48F0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this from Rapunzel</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4910</td>
+  <td><b>RIGHT:</b> 00000274CB7D4CF0</td>
+</tr>
+</table>>];
+n00000274CB7D4910 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4910</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Rapunzel</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4CF0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4CF0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this from Aurora</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4A90</td>
+  <td><b>RIGHT:</b> 00000274CB7D4D50</td>
+</tr>
+</table>>];
+n00000274CB7D4A90 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4A90</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Aurora</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4D50 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4D50</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Cinderella</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4CF0 -> n00000274CB7D4A90 [label = "yes"];
+n00000274CB7D4CF0 -> n00000274CB7D4D50 [label = "no"];
+n00000274CB7D48F0 -> n00000274CB7D4910 [label = "yes"];
+n00000274CB7D48F0 -> n00000274CB7D4CF0 [label = "no"];
+n00000274CB7D4810 -> n00000274CB7D4B70 [label = "yes"];
+n00000274CB7D4810 -> n00000274CB7D48F0 [label = "no"];
+n00000274CB7D4930 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4930</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this red-haired</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4E90</td>
+  <td><b>RIGHT:</b> 00000274CB7D4AF0</td>
+</tr>
+</table>>];
+n00000274CB7D4E90 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4E90</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this from The Little Mermaid</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4D70</td>
+  <td><b>RIGHT:</b> 00000274CB7D4E50</td>
+</tr>
+</table>>];
+n00000274CB7D4D70 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4D70</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Ariel</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4E50 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4E50</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Merida</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4E90 -> n00000274CB7D4D70 [label = "yes"];
+n00000274CB7D4E90 -> n00000274CB7D4E50 [label = "no"];
+n00000274CB7D4AF0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4AF0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this dark-haired</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4D90</td>
+  <td><b>RIGHT:</b> 00000274CB7D4BD0</td>
+</tr>
+</table>>];
+n00000274CB7D4D90 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4D90</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this from Aladdin</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4EB0</td>
+  <td><b>RIGHT:</b> 00000274CB7D4C30</td>
+</tr>
+</table>>];
+n00000274CB7D4EB0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4EB0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Jasmine</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4C30 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4C30</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this from Mulan</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D49D0</td>
+  <td><b>RIGHT:</b> 00000274CB7D4DB0</td>
+</tr>
+</table>>];
+n00000274CB7D49D0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D49D0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Mulan</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4DB0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4DB0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this from The Princess and the Frog</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D49F0</td>
+  <td><b>RIGHT:</b> 00000274CB7D4DD0</td>
+</tr>
+</table>>];
+n00000274CB7D49F0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D49F0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Tiana</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4DD0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4DD0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this Moana</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4DF0</td>
+  <td><b>RIGHT:</b> 00000274CB7D4B50</td>
+</tr>
+</table>>];
+n00000274CB7D4DF0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4DF0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Moana</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4B50 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4B50</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this Pocahontas</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7D4B10</td>
+  <td><b>RIGHT:</b> 00000274CB7D4B90</td>
+</tr>
+</table>>];
+n00000274CB7D4B10 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4B10</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Pocahontas</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4B90 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4B90</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Snow White</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4B50 -> n00000274CB7D4B10 [label = "yes"];
+n00000274CB7D4B50 -> n00000274CB7D4B90 [label = "no"];
+n00000274CB7D4DD0 -> n00000274CB7D4DF0 [label = "yes"];
+n00000274CB7D4DD0 -> n00000274CB7D4B50 [label = "no"];
+n00000274CB7D4DB0 -> n00000274CB7D49F0 [label = "yes"];
+n00000274CB7D4DB0 -> n00000274CB7D4DD0 [label = "no"];
+n00000274CB7D4C30 -> n00000274CB7D49D0 [label = "yes"];
+n00000274CB7D4C30 -> n00000274CB7D4DB0 [label = "no"];
+n00000274CB7D4D90 -> n00000274CB7D4EB0 [label = "yes"];
+n00000274CB7D4D90 -> n00000274CB7D4C30 [label = "no"];
+n00000274CB7D4BD0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7D4BD0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Belle</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7D4AF0 -> n00000274CB7D4D90 [label = "yes"];
+n00000274CB7D4AF0 -> n00000274CB7D4BD0 [label = "no"];
+n00000274CB7D4930 -> n00000274CB7D4E90 [label = "yes"];
+n00000274CB7D4930 -> n00000274CB7D4AF0 [label = "no"];
+n00000274CB7D4D10 -> n00000274CB7D4810 [label = "yes"];
+n00000274CB7D4D10 -> n00000274CB7D4930 [label = "no"];
+n00000274CB7C6690 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7C6690</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this from Aladdin</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA840</td>
+  <td><b>RIGHT:</b> 00000274CB7EA9C0</td>
+</tr>
+</table>>];
+n00000274CB7EA840 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA840</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Aladdin</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA9C0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA9C0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Mowgli</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7C6690 -> n00000274CB7EA840 [label = "yes"];
+n00000274CB7C6690 -> n00000274CB7EA9C0 [label = "no"];
+n00000274CB7D4E30 -> n00000274CB7D4D10 [label = "yes"];
+n00000274CB7D4E30 -> n00000274CB7C6690 [label = "no"];
+n00000274CB7EA400 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA400</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this from Winnie the Pooh</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA700</td>
+  <td><b>RIGHT:</b> 00000274CB7EA800</td>
+</tr>
+</table>>];
+n00000274CB7EA700 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA700</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this Winnie</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA2E0</td>
+  <td><b>RIGHT:</b> 00000274CB7EA260</td>
+</tr>
+</table>>];
+n00000274CB7EA2E0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA2E0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Winnie the Pooh</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA260 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA260</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this Piglet</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA820</td>
+  <td><b>RIGHT:</b> 00000274CB7EA280</td>
+</tr>
+</table>>];
+n00000274CB7EA820 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA820</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Piglet</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA280 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA280</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this Tigger</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA300</td>
+  <td><b>RIGHT:</b> 00000274CB7EA380</td>
+</tr>
+</table>>];
+n00000274CB7EA300 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA300</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Tigger</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA380 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA380</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Eeyore</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA280 -> n00000274CB7EA300 [label = "yes"];
+n00000274CB7EA280 -> n00000274CB7EA380 [label = "no"];
+n00000274CB7EA260 -> n00000274CB7EA820 [label = "yes"];
+n00000274CB7EA260 -> n00000274CB7EA280 [label = "no"];
+n00000274CB7EA700 -> n00000274CB7EA2E0 [label = "yes"];
+n00000274CB7EA700 -> n00000274CB7EA260 [label = "no"];
+n00000274CB7EA800 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA800</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this a lion</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA320</td>
+  <td><b>RIGHT:</b> 00000274CB7EA720</td>
+</tr>
+</table>>];
+n00000274CB7EA320 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA320</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this Simba</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA680</td>
+  <td><b>RIGHT:</b> 00000274CB7EA580</td>
+</tr>
+</table>>];
+n00000274CB7EA680 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA680</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Simba</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA580 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA580</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Nala</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA320 -> n00000274CB7EA680 [label = "yes"];
+n00000274CB7EA320 -> n00000274CB7EA580 [label = "no"];
+n00000274CB7EA720 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA720</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this a mouse</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA340</td>
+  <td><b>RIGHT:</b> 00000274CB7EA2C0</td>
+</tr>
+</table>>];
+n00000274CB7EA340 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA340</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this Mickey</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA3C0</td>
+  <td><b>RIGHT:</b> 00000274CB7EA4A0</td>
+</tr>
+</table>>];
+n00000274CB7EA3C0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA3C0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Mickey Mouse</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA4A0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA4A0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Minnie Mouse</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA340 -> n00000274CB7EA3C0 [label = "yes"];
+n00000274CB7EA340 -> n00000274CB7EA4A0 [label = "no"];
+n00000274CB7EA2C0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA2C0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this a duck</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA520</td>
+  <td><b>RIGHT:</b> 00000274CB7EA420</td>
+</tr>
+</table>>];
+n00000274CB7EA520 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA520</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Donald Duck</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA420 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA420</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Is this Stitch</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 00000274CB7EA740</td>
+  <td><b>RIGHT:</b> 00000274CB7EA440</td>
+</tr>
+</table>>];
+n00000274CB7EA740 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA740</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Stitch</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA440 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">00000274CB7EA440</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Dumbo</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n00000274CB7EA420 -> n00000274CB7EA740 [label = "yes"];
+n00000274CB7EA420 -> n00000274CB7EA440 [label = "no"];
+n00000274CB7EA2C0 -> n00000274CB7EA520 [label = "yes"];
+n00000274CB7EA2C0 -> n00000274CB7EA420 [label = "no"];
+n00000274CB7EA720 -> n00000274CB7EA340 [label = "yes"];
+n00000274CB7EA720 -> n00000274CB7EA2C0 [label = "no"];
+n00000274CB7EA800 -> n00000274CB7EA320 [label = "yes"];
+n00000274CB7EA800 -> n00000274CB7EA720 [label = "no"];
+n00000274CB7EA400 -> n00000274CB7EA700 [label = "yes"];
+n00000274CB7EA400 -> n00000274CB7EA800 [label = "no"];
+n00000274CB7D4CB0 -> n00000274CB7D4E30 [label = "yes"];
+n00000274CB7D4CB0 -> n00000274CB7EA400 [label = "no"];
 }

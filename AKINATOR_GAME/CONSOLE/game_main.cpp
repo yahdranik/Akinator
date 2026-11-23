@@ -32,7 +32,6 @@ int main()
     return 0;
 }
 
-
 // SUPPORTING FUNCS -----------------------------------------------------
 
 game_error_t main_init_and_fill_tree(tree_t* tree)

@@ -1,0 +1,88 @@
+("Disney character"
+    ("human"
+        ("female"
+            ("princess"
+                ("blonde"
+                    ("Rapunzel")
+                    ("Frozen"
+                        ("Elsa")
+                        ("Anna")
+                    )
+                )
+                ("not blonde"
+                    ("redhead"
+                        ("Ariel")
+                        ("Merida")
+                    )
+                    ("dark-haired"
+                        ("European"
+                            ("Belle")
+                            ("Snow White")
+                        )
+                        ("non-European"
+                            ("Asian"
+                                ("Mulan")
+                                ("Jasmine")
+                            )
+                            ("not Asian"
+                                ("Pocahontas")
+                                ("African or Pacific"
+                                    ("Tiana")
+                                    ("Moana")
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+            ("non-princess"
+                ("Megara")
+                ("Esmeralda")
+            )
+        )
+        ("male"
+            ("prince"
+                ("Aladdin")
+                ("Eric")
+            )
+            ("non-prince"
+                ("Mowgli")
+                ("Quasimodo")
+            )
+        )
+    )
+    ("animal"
+        ("bear"
+            ("Winnie the Pooh")
+            ("Baloo")
+        )
+        ("not bear"
+            ("lion"
+                ("Simba")
+                ("Nala")
+            )
+            ("other animal"
+                ("mouse"
+                    ("Mickey Mouse")
+                    ("Minnie Mouse")
+                )
+                ("not mouse"
+                    ("duck"
+                        ("Donald Duck")
+                        ("Daisy Duck")
+                    )
+                    ("not duck"
+                        ("dog"
+                            ("Pluto")
+                            ("Goofy")
+                        )
+                        ("other animals"
+                            ("Dumbo")
+                            ("Bambi")
+                        )
+                    )
+                )
+            )
+        )
+    )
+)
