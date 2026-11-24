@@ -1,11 +1,11 @@
 #ifndef APP_BUTTONS
 #define APP_BUTTONS
 
-#include "raylib.h"
 #include "app_common.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "C:\raylib-6.0_win64_mingw-w64\include\raylib.h"
 
 Rectangle get_menu_button(int index);
 Rectangle get_back_button();

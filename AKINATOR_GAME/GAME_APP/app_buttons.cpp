@@ -1,4 +1,5 @@
 #include "app_buttons.h"
+#include "C:\raylib-6.0_win64_mingw-w64\include\raylib.h"
 
 Rectangle get_menu_button(int index)
 {

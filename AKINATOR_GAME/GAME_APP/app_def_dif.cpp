@@ -1,10 +1,6 @@
 #include "app_def_dif.h"
 #include "app_common.h"
-#include "app_common.h"
-#include "app_def_dif.h"
-#include "app_common.h"
-#include "app_def_dif.h"
-#include "raylib.h"
+#include "C:\raylib-6.0_win64_mingw-w64\include\raylib.h"
 
 game_error_t find_node(node_t* node, const char* value, node_t** found_node, path_step_t* path, size_t* path_size)
 {

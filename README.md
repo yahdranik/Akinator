@@ -53,7 +53,7 @@ sudo apt install build-essential graphviz
 
 Установить raylib и [Graphviz](https://graphviz.readthedocs.io/en/stable/manual.html):
 ```
-git clone https://github.com; cd .\vcpkg\; .\bootstrap-vcpkg.bat; .\vcpkg.exe integrate install; .\vcpkg.exe install raylib:x64-windows
+git clone https://github.com; cd ./vcpkg/; ./bootstrap-vcpkg.bat; ./vcpkg.exe integrate install; ./vcpkg.exe install raylib:x64-windows
 sudo apt install build-essential graphviz
 ```
 

@@ -1,7 +1,6 @@
 #ifndef APP_COMMON
 #define APP_COMMON
 
-#include "raylib.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
