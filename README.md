@@ -74,9 +74,10 @@ sudo apt install build-essential graphviz
 > [!NOTE]
 > Чтобы запустить графическую версию нужен терминал Powershel 
 
-Установить raylib
+Установить raylib [Graphviz](https://graphviz.readthedocs.io/en/stable/manual.html):
 ```
 git clone https://github.com; cd .\vcpkg\; .\bootstrap-vcpkg.bat; .\vcpkg.exe integrate install; .\vcpkg.exe install raylib:x64-windows
+sudo apt install build-essential graphviz
 ```
 
 Скомпилировать программу
