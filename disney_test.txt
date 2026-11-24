@@ -1,22 +1,30 @@
  ("princess"
-    ("Russian"
-        ("brunet"
-            ("Dima Bilan"
+    ("blond"
+        ("long hear"
+            ("Rapunzel"
             )
-            ("Shaman"
+            ("Cenderella"
             )
         )
-        ("woman"
-            ("Lana Del Ray"
+        ("red hear"
+            ("Mirida"
             )
-            ("Michael Jakson"
+            ("Moana"
             )
         )
     )
-    ("president"
-        ("Putin"
+    ("animal"
+        ("boar"
+            ("Pumba"
+            )
+            ("Meerkat"
+                ("Timon"
+                )
+                ("Lion King"
+                )
+            )
         )
-        ("Ronaldo"
+        ("Aladin"
         )
     )
  )

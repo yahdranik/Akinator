@@ -11,14 +11,14 @@ int main()
 
     InitWindow(WINDOW_WIDTH, WINDOW_HEIHGT, "Akinator");
 
-    Texture2D background = LoadTexture("background_disney.png");
-    Font font_headers = LoadFontEx("Fishface.ttf", 32, NULL, 0);
-    Font font_text = LoadFontEx("JannonTextMedSC BoldItalic.otf", 32, NULL, 0);
+    Texture2D background = LoadTexture("DESIGN/background_disney.png");
+    Font font_headers = LoadFontEx("DESIGN/Fishface.ttf", 32, NULL, 0);
+    Font font_text = LoadFontEx("DESIGN/JannonTextMedSC BoldItalic.otf", 32, NULL, 0);
     SetTextureFilter(font_headers.texture, TEXTURE_FILTER_BILINEAR);
     SetTextureFilter(font_text.texture, TEXTURE_FILTER_BILINEAR);
 
     InitAudioDevice();
-    Music music = LoadMusicStream("Akinator_music.mp3");
+    Music music = LoadMusicStream("DESIGN/Akinator_music.mp3");
     music.looping = true;
     SetMusicVolume(music, 0.4f);
     PlayMusicStream(music);

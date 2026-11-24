@@ -9,113 +9,153 @@ ranksep=1.;
 node [fontsize=12, shape=box, style="filled, rounded", color="#4a3056", fontname="DejaVu Sans"];
 edge [labelfloat=false];
 
-n0000027CC6214E50 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC6214E50</td>
+n0000020ED0322150 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED0322150</td>
 </tr>
 <tr>  <td colspan="2" border="1" sides="b"><b>princess</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000027CC6214C30</td>
-  <td><b>RIGHT:</b> 0000027CC62149B0</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000020ED0322010</td>
+  <td><b>RIGHT:</b> 0000020ED0322590</td>
 </tr>
 </table>>];
-n0000027CC6214C30 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC6214C30</td>
+n0000020ED0322010 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED0322010</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Russian</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>blond</b></td>
 </tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000027CC6214AB0</td>
-  <td><b>RIGHT:</b> 0000027CC6214B70</td>
-</tr>
-</table>>];
-n0000027CC6214AB0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC6214AB0</td>
-</tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>brunet</b></td>
-</tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000027CC62148B0</td>
-  <td><b>RIGHT:</b> 0000027CC6214B10</td>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000020ED0322470</td>
+  <td><b>RIGHT:</b> 0000020ED03221B0</td>
 </tr>
 </table>>];
-n0000027CC62148B0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC62148B0</td>
+n0000020ED0322470 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED0322470</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Dima Bilan</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>long hear</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000020ED0322030</td>
+  <td><b>RIGHT:</b> 0000020ED03225B0</td>
+</tr>
+</table>>];
+n0000020ED0322030 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED0322030</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Rapunzel</b></td>
 </tr>
 <tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
   <td><b>RIGHT:</b> 0000000000000000</td>
 </tr>
 </table>>];
-n0000027CC6214B10 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC6214B10</td>
+n0000020ED03225B0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED03225B0</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Shaman</b></td>
-</tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
-  <td><b>RIGHT:</b> 0000000000000000</td>
-</tr>
-</table>>];
-n0000027CC6214AB0 -> n0000027CC62148B0 [label = "yes"];
-n0000027CC6214AB0 -> n0000027CC6214B10 [label = "no"];
-n0000027CC6214B70 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC6214B70</td>
-</tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>woman</b></td>
-</tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000027CC6214810</td>
-  <td><b>RIGHT:</b> 0000027CC6214770</td>
-</tr>
-</table>>];
-n0000027CC6214810 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC6214810</td>
-</tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Lana Del Ray</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>Cenderella</b></td>
 </tr>
 <tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
   <td><b>RIGHT:</b> 0000000000000000</td>
 </tr>
 </table>>];
-n0000027CC6214770 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC6214770</td>
+n0000020ED0322470 -> n0000020ED0322030 [label = "yes"];
+n0000020ED0322470 -> n0000020ED03225B0 [label = "no"];
+n0000020ED03221B0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED03221B0</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Michael Jakson</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>red hear</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000020ED0322490</td>
+  <td><b>RIGHT:</b> 0000020ED0322250</td>
+</tr>
+</table>>];
+n0000020ED0322490 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED0322490</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Mirida</b></td>
 </tr>
 <tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
   <td><b>RIGHT:</b> 0000000000000000</td>
 </tr>
 </table>>];
-n0000027CC6214B70 -> n0000027CC6214810 [label = "yes"];
-n0000027CC6214B70 -> n0000027CC6214770 [label = "no"];
-n0000027CC6214C30 -> n0000027CC6214AB0 [label = "yes"];
-n0000027CC6214C30 -> n0000027CC6214B70 [label = "no"];
-n0000027CC62149B0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC62149B0</td>
+n0000020ED0322250 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED0322250</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>president</b></td>
-</tr>
-<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000027CC6214A90</td>
-  <td><b>RIGHT:</b> 0000027CC62147B0</td>
-</tr>
-</table>>];
-n0000027CC6214A90 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC6214A90</td>
-</tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Putin</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>Moana</b></td>
 </tr>
 <tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
   <td><b>RIGHT:</b> 0000000000000000</td>
 </tr>
 </table>>];
-n0000027CC62147B0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
-<tr>  <td colspan="2" border="1" sides="b">0000027CC62147B0</td>
+n0000020ED03221B0 -> n0000020ED0322490 [label = "yes"];
+n0000020ED03221B0 -> n0000020ED0322250 [label = "no"];
+n0000020ED0322010 -> n0000020ED0322470 [label = "yes"];
+n0000020ED0322010 -> n0000020ED03221B0 [label = "no"];
+n0000020ED0322590 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED0322590</td>
 </tr>
-<tr>  <td colspan="2" border="1" sides="b"><b>Ronaldo</b></td>
+<tr>  <td colspan="2" border="1" sides="b"><b>animal</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000020ED0322070</td>
+  <td><b>RIGHT:</b> 0000020ED03223B0</td>
+</tr>
+</table>>];
+n0000020ED0322070 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED0322070</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>boar</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000020ED0322130</td>
+  <td><b>RIGHT:</b> 0000020ED03222F0</td>
+</tr>
+</table>>];
+n0000020ED0322130 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED0322130</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Pumba</b></td>
 </tr>
 <tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
   <td><b>RIGHT:</b> 0000000000000000</td>
 </tr>
 </table>>];
-n0000027CC62149B0 -> n0000027CC6214A90 [label = "yes"];
-n0000027CC62149B0 -> n0000027CC62147B0 [label = "no"];
-n0000027CC6214E50 -> n0000027CC6214C30 [label = "yes"];
-n0000027CC6214E50 -> n0000027CC62149B0 [label = "no"];
+n0000020ED03222F0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED03222F0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Meerkat</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000020ED03223D0</td>
+  <td><b>RIGHT:</b> 0000020ED03220B0</td>
+</tr>
+</table>>];
+n0000020ED03223D0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED03223D0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Timon</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n0000020ED03220B0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED03220B0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Lion King</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n0000020ED03222F0 -> n0000020ED03223D0 [label = "yes"];
+n0000020ED03222F0 -> n0000020ED03220B0 [label = "no"];
+n0000020ED0322070 -> n0000020ED0322130 [label = "yes"];
+n0000020ED0322070 -> n0000020ED03222F0 [label = "no"];
+n0000020ED03223B0 [fillcolor="#a094ef", label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="4">
+<tr>  <td colspan="2" border="1" sides="b">0000020ED03223B0</td>
+</tr>
+<tr>  <td colspan="2" border="1" sides="b"><b>Aladin</b></td>
+</tr>
+<tr>  <td border="1" sides="r"><b>LEFT:</b> 0000000000000000</td>
+  <td><b>RIGHT:</b> 0000000000000000</td>
+</tr>
+</table>>];
+n0000020ED0322590 -> n0000020ED0322070 [label = "yes"];
+n0000020ED0322590 -> n0000020ED03223B0 [label = "no"];
+n0000020ED0322150 -> n0000020ED0322010 [label = "yes"];
+n0000020ED0322150 -> n0000020ED0322590 [label = "no"];
 }
