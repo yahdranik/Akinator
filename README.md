@@ -24,6 +24,49 @@
 
 В любой моменты игры можно нажать кнопку _back_ в левом нижнем иглу, либо клавишу `Escape`, чтобы вернуться в главное меню игры, а также во время игры на фоне звучит музыка из оригинальной игры Акинатор, в качестве отсылки.
 
+## Установка и запуск
+### Консольная версия
+
+> [!NOTE]
+> Чтобы запустить консольную версию нужна операционная система Linux
+
+Установить компилятор и [Graphviz](https://graphviz.readthedocs.io/en/stable/manual.html):
+```
+sudo apt update
+sudo apt install build-essential graphviz
+```
+
+Скомпилировать программу
+```
+./AKINATOR_GAME/CONSOLE/console_game.sh
+```
+
+Запустить программу
+```
+./game_mimimi.exe
+```
+
+### Графическая версия
+
+> [!NOTE]
+> Чтобы запустить графическую версию нуженa операционная система Windows
+
+Установить raylib и [Graphviz](https://graphviz.readthedocs.io/en/stable/manual.html):
+```
+git clone https://github.com; cd .\vcpkg\; .\bootstrap-vcpkg.bat; .\vcpkg.exe integrate install; .\vcpkg.exe install raylib:x64-windows
+sudo apt install build-essential graphviz
+```
+
+Скомпилировать программу
+```
+./AKINATOR_GAME/GAME_APP/app_game.bat
+```
+
+Запустить программу
+```
+./app_mimimi.exe
+```
+
 ## База данных игры
 
 База представляет собой префиксно записанное дерево в файле формата `.txt`, в узлах которого лежит вопрос пользователю, а в листьях - все персонажи игры. Для работы с деревьями реализованы функции, не зависящие от типа данных _(тип переменной value это void*)_ и не привязанных к игре. 
@@ -47,45 +90,3 @@ _Графический Dump_ - текстовый и графический в�
 
 <img src="BIN_TREE\report\tree0.png" alt="Графический Dump" width="700">
 
-## Установка и запуск
-### Консольная версия
-
-> [!NOTE]
-> Чтобы запустить консольную версию нужен терминал wsl 
-
-Установить компилятор и [Graphviz](https://graphviz.readthedocs.io/en/stable/manual.html):
-```
-sudo apt update
-sudo apt install build-essential graphviz
-```
-
-Скомпилировать программу
-```
-./AKINATOR_GAME\CONSOLE\console_game.sh
-```
-
-Запустить программу
-```
-./game_mimimi.exe
-```
-
-### Графическая версия
-
-> [!NOTE]
-> Чтобы запустить графическую версию нужен терминал Powershel 
-
-Установить raylib [Graphviz](https://graphviz.readthedocs.io/en/stable/manual.html):
-```
-git clone https://github.com; cd .\vcpkg\; .\bootstrap-vcpkg.bat; .\vcpkg.exe integrate install; .\vcpkg.exe install raylib:x64-windows
-sudo apt install build-essential graphviz
-```
-
-Скомпилировать программу
-```
-./AKINATOR_GAME\GAME_APP\app_game.bat
-```
-
-Запустить программу
-```
-./app_mimimi.exe
-```
