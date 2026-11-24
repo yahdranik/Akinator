@@ -40,3 +40,51 @@
 | `print_tree` | Полная печать дерева в файл в префиксной форме, вызывает рекурсивную функцию печати узлов |
 | `print_node` | рекурсивная функция печати узлов в файл |
 | `tree_dump` | Графический и текстовый вывод состояния дерева |
+
+## Графический Dump дерева
+
+_Графический Dump_ - текстовый и графический вывод состяния дерева, который нужен для более эффективной отладки программы. В графике в узлах выводятся указатели на левые и правые узлы, указатель самого узла и значение, которое в нем лежит. Пример dumpа для реализованной игры:
+
+<img src="BIN_TREE\report\tree0.png" alt="Графический Dump" width="400">
+
+## Установка и запуск
+### Консольная версия
+
+> [!NOTE]
+> Чтобы запустить консольную версию нужен терминал wsl 
+
+Установить компилятор и [Graphviz](https://graphviz.readthedocs.io/en/stable/manual.html):
+```
+sudo apt update
+sudo apt install build-essential graphviz
+```
+
+Скомпилировать программу
+```
+./AKINATOR_GAME\CONSOLE\console_game.sh
+```
+
+Запустить программу
+```
+./game_mimimi.exe
+```
+
+### Графическая версия
+
+> [!NOTE]
+> Чтобы запустить графическую версию нужен терминал Powershel 
+
+Установить raylib
+```
+git clone https://github.com; cd .\vcpkg\; .\bootstrap-vcpkg.bat; .\vcpkg.exe integrate install; .\vcpkg.exe install raylib:x64-windows
+```
+
+Скомпилировать программу
+```
+./AKINATOR_GAME\GAME_APP\app_game.bat
+```
+
+Запустить программу
+```
+./app_mimimi.exe
+```
