@@ -1,6 +1,6 @@
 #include "app_guess.h"
-#include "raylib.h"
-
+#include "app_common.h"
+#include "app_def_dif.h"
 
 app_error_t app_init(app_state_t* app)
 {
@@ -75,9 +75,12 @@ app_error_t app_update(app_state_t* app)
 
             if (is_button_clicked(button))
             {
-                app->screen = MENU_SCREENS[i];
-                app->current_node = app->tree.root;
-                app->guess_stage = GUESS_ASKING;
+                app->screen         = MENU_SCREENS[i];
+                app->current_node   = app->tree.root;
+                app->guess_stage    = GUESS_ASKING;
+                app->mode_stage     = MODE_INPUT_FIRST;
+                app->name_buffer[0]     = '\0';
+                app->question_buffer[0] = '\0';
                 break;
             }
         }
@@ -95,6 +98,16 @@ app_error_t app_update(app_state_t* app)
         if (app->screen == SCREEN_GUESS)
         {
             update_guess(app);
+        }
+
+        if (app->screen == SCREEN_DEFINE)
+        {
+            update_define(app);
+        }
+
+        if (app->screen == SCREEN_DIFFERENCE)
+        {
+            update_difference(app);
         }
     }
 
@@ -124,13 +137,11 @@ app_error_t app_draw(app_state_t* app, Texture2D background, Font font_text, Fon
             break;
 
         case SCREEN_DEFINE:
-            DrawTextEx(font_headers, "DEFINE MODE", (Vector2){60, 50}, 70, 1, DARKPURPLE);
-            draw_button(get_back_button(), "back", font_text);
+            draw_define(app, font_text, font_headers);
             break;
         
         case SCREEN_DIFFERENCE:
-            DrawTextEx(font_headers, "DIFFERENCE MODE", (Vector2){60, 50}, 70, 1, DARKPURPLE);
-            draw_button(get_back_button(), "back", font_text);
+            draw_difference(app, font_text, font_headers);
             break;
         
         default:
@@ -222,7 +233,12 @@ void update_text_field(char* buffer)
         symbol = GetCharPressed();
     }
 
-    int len_final = (int) strlen(buffer);
+    size_t len_final = strlen(buffer);
+
+    if (IsKeyPressed(KEY_BACKSPACE) && len_final > 0)
+    {
+        buffer[len_final - 1] = '\0';
+    }
 }
 
 void update_enter_text(app_state_t* app)
@@ -325,13 +341,13 @@ app_error_t draw_guess(app_state_t* app, Font font_text, Font font_headers)
     {
         case GUESS_ASKING:
             DrawTextEx(font_text, is_leaf ? TextFormat("Is it %s?", text) : TextFormat("%s?", text), 
-                     (Vector2) {60, 200}, 30, 1, BLACK);
+                     (Vector2) {60, 200}, 35, 1, BLACK);
             draw_button(get_answer_button(0), "Yes", font_text);
             draw_button(get_answer_button(1), "No", font_text);
             break;
 
         case GUESS_WON:
-            DrawTextEx(font_text, "I knew it!", (Vector2) {60, 200}, 30, 1, DARKGREEN);
+            DrawTextEx(font_text, "I knew it!", (Vector2) {60, 200}, 35, 1, DARKGREEN);
             draw_button(get_single_button(), "Play again", font_text);
             break;
 

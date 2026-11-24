@@ -33,11 +33,11 @@
 const int TIME_TO_SLEEP = 10;
 const int MAX_LEN_STR   = 64;
 
-typedef struct
+struct path_step_t
 {
     node_t* question_node;
     bool answer;
-} path_step_t;
+};
 
 enum game_error_t
 {
@@ -57,7 +57,6 @@ void sleep_print(const char *string);
 void hello();
 void menu();
 
-game_error_t find_node(tree_t* tree, const void* value);
 game_error_t play_again(tree_t* tree, bool* answer);
 game_error_t reading_user_answer(tree_t* tree, bool* answer);
 game_error_t choose_mode(tree_t* tree);

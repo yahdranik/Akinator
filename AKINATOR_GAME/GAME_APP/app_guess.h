@@ -3,6 +3,7 @@
 
 #include "app_common.h"
 #include "app_buttons.h"
+#include "app_def_dif.h"
 
 // PROTOTYPES ----------------------------------------------
 
@@ -15,7 +16,6 @@ app_error_t draw_guess(app_state_t* app, Font font_text, Font font_headers);
 
 bool is_leaf_node(node_t* node);
 app_error_t add_character(app_state_t* app);
-void update_text_field(char* buffer);
-void update_enter_text(app_state_t* app);
+
 
 #endif

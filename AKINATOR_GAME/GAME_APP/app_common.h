@@ -60,6 +60,13 @@ enum guess_stage_t
     GUESS_FAILED
 };
 
+enum mode_stage_t
+{
+    MODE_INPUT_FIRST,
+    MODE_INPUT_SECOND,
+    MODE_RESULT
+};
+
 struct app_state_t
 {
     screen_t screen;
@@ -69,6 +76,8 @@ struct app_state_t
     node_t* current_node;
 
     guess_stage_t guess_stage;
+    mode_stage_t mode_stage;
+
     char name_buffer[TEXT_BUFFER_SIZE];
     char question_buffer[TEXT_BUFFER_SIZE];
 
@@ -80,5 +89,8 @@ struct app_state_t
 const int MENU_BUTTONS_COUNT = 3;
 const screen_t MENU_SCREENS[MENU_BUTTONS_COUNT] = {SCREEN_GUESS, SCREEN_DEFINE, SCREEN_DIFFERENCE};
 const char* const MENU_LABELS[MENU_BUTTONS_COUNT]  = {"GUESS", "DEF", "DIF"}; 
+
+void update_text_field(char* buffer);
+void update_enter_text(app_state_t* app);
 
 #endif

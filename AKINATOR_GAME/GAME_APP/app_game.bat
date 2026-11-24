@@ -1,1 +1,1 @@
-g++ ./AKINATOR_GAME/GAME_APP/app_guess.cpp AKINATOR_GAME/GAME_APP/app_buttons.cpp AKINATOR_GAME/GAME_APP/app_main.cpp BIN_TREE/SOURCE/Tree_Fill_Ops.cpp BIN_TREE/SOURCE/Tree_Init_Ops.cpp BIN_TREE/SOURCE/Tree_Print_Ops.cpp -o app_mimimi -lraylib -lopengl32 -lgdi32 -lwinmm
+g++ ./AKINATOR_GAME/GAME_APP/app_guess.cpp AKINATOR_GAME/GAME_APP/app_buttons.cpp AKINATOR_GAME/GAME_APP/app_def_dif.cpp AKINATOR_GAME/GAME_APP/app_main.cpp BIN_TREE/SOURCE/Tree_Fill_Ops.cpp BIN_TREE/SOURCE/Tree_Init_Ops.cpp BIN_TREE/SOURCE/Tree_Print_Ops.cpp -o app_mimimi -lraylib -lopengl32 -lgdi32 -lwinmm
