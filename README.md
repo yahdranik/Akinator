@@ -43,7 +43,7 @@ sudo apt install build-essential graphviz
 
 Запустить программу
 ```
-./game_mimimi.exe
+./game_mimimi
 ```
 
 ### Графическая версия
@@ -53,18 +53,18 @@ sudo apt install build-essential graphviz
 
 Установить raylib и [Graphviz](https://graphviz.readthedocs.io/en/stable/manual.html):
 ```
-git clone https://github.com; cd ./vcpkg/; ./bootstrap-vcpkg.bat; ./vcpkg.exe integrate install; ./vcpkg.exe install raylib:x64-windows
+git clone https://github.com; cd .\vcpkg\; .\bootstrap-vcpkg.bat; .\vcpkg.exe integrate install; .\vcpkg.exe install raylib:x64-windows
 sudo apt install build-essential graphviz
 ```
 
 Скомпилировать программу
 ```
-./AKINATOR_GAME/GAME_APP/app_game.bat
+.\AKINATOR_GAME\GAME_APP\app_game.bat
 ```
 
 Запустить программу
 ```
-./app_mimimi.exe
+.\app_mimimi.exe
 ```
 
 ## База данных игры

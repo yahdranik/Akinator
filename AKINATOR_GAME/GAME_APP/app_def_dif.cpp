@@ -199,28 +199,37 @@ app_error_t draw_difference(app_state_t* app, Font font_text, Font font_headers)
         return APP_SUCCESS;
     }
 
+    DrawTextEx(font_text, TextFormat("The %s is similar to %s in that they both", app->name_buffer, app->question_buffer), (Vector2){60, 200}, 35, 1, BLACK);
+    
+    char buffer[1024] = {};
     size_t ptr = 0;
-    while (ptr < first_size && ptr < second_size &&
-            first_path[ptr].question_node == second_path[ptr].question_node &&
+    
+    while (ptr < first_size && ptr < second_size && first_path[ptr].question_node == second_path[ptr].question_node &&
             first_path[ptr].answer == second_path[ptr].answer)
     {
-        ptr++;
-    }
+        if (ptr >= first_size || ptr >= second_size)
+        {
+            DrawTextEx(font_text, "It is the same character.", (Vector2){60, 200}, 35, 1, BLACK);
+            break;
+        }
 
-    if (ptr >= first_size || ptr >= second_size)
-    {
-        DrawTextEx(font_text, "It is the same character.", (Vector2){60, 200}, 35, 1, BLACK);
+        snprintf(buffer, 1024, "%s %s, ",  first_path[ptr].answer ? "" : "not", (char*) first_path[ptr].question_node->value);
     }
-    else
+    
+    DrawTextEx(font_text, buffer, (Vector2){60, 240}, 35, 1, BLACK);
+
+    while (ptr < first_size && ptr < second_size)
     {
-        DrawTextEx(font_text, "Differences:", (Vector2){60, 200}, 30, 1, DARKPURPLE);
+
+    }
+        DrawTextEx(font_text, "Differences:", (Vector2){60, 200}, 40, 1, DARKPURPLE);
         DrawTextEx(font_text, TextFormat("%s?", (char*) first_path[ptr].question_node->value),
                     (Vector2){60, 260}, 35, 1, BLACK);
         DrawTextEx(font_text, TextFormat("%s: %s", app->name_buffer, first_path[ptr].answer ? "YES" : "NO"),
                     (Vector2){60, 300}, 35, 1, BLACK);
         DrawTextEx(font_text, TextFormat("%s: %s", app->question_buffer, second_path[ptr].answer ? "YES" : "NO"),
                     (Vector2){60, 340}, 35, 1, BLACK);
-    }
+
 
     return APP_SUCCESS;
 }
