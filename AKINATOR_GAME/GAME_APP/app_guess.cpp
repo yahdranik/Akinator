@@ -331,7 +331,7 @@ app_error_t draw_guess(app_state_t* app, Font font_text, Font font_headers)
 {
     if (app == NULL) return APP_ERROR;
     DrawTextEx(font_headers, "GUESS MODE", (Vector2){60, 50}, 70, 1, DARKPURPLE);
-    DrawTextEx(font_text, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~", (Vector2){60, 120}, 30, 1, DARKPURPLE);
+    DrawTextEx(font_text, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~", (Vector2){60, 120}, 30, 1, DARKPURPLE);
     draw_button(get_back_button(), "back", font_text);
 
     char* text = (char*) app->current_node->value;

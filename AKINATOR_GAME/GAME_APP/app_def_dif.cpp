@@ -74,6 +74,7 @@ app_error_t update_define(app_state_t* app)
 app_error_t draw_define(app_state_t* app, Font font_text, Font font_headers)
 {
     DrawTextEx(font_headers, "DEFINE MODE", (Vector2){60, 50}, 70, 1, DARKPURPLE);
+    DrawTextEx(font_text, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~", (Vector2){60, 120}, 30, 1, DARKPURPLE);
     draw_button(get_back_button(), "back", font_text);
 
     if (app->mode_stage == MODE_INPUT_FIRST)
@@ -94,24 +95,48 @@ app_error_t draw_define(app_state_t* app, Font font_text, Font font_headers)
         DrawTextEx(font_text, "Sorry, unknown character", (Vector2){60, 200}, 30, 1, MAROON);
     }
 
-    else 
+    else
     {
-        DrawTextEx(font_text, TextFormat("This is what i know about %s", app->name_buffer), (Vector2){60, 200}, 30, 1, DARKPURPLE);
+        DrawTextEx(font_text, TextFormat("This is what i know about %s:", app->name_buffer),
+                  (Vector2){60, 200}, 40, 1, DARKPURPLE);
+
+        char sentence[MAX_SENTENCE_SIZE] = "";
 
         for (size_t i = 0; i < path_size; i++)
         {
-            if (path[i].answer == false)
+            strcat(sentence, path[i].answer ? "" : "not");
+            strcat(sentence, (const char*) path[i].question_node->value);
+
+            if (i == path_size - 2)
             {
-                DrawTextEx(font_text, TextFormat("%s  : %s", path[i].question_node->value, "no"), 
-                          (Vector2){60, 260 + (float) 35 * i}, 30, 1, BLACK);
+                strcat(sentence, " and ");
             }
 
-            else 
+            else if (i < path_size - 1)
             {
-                DrawTextEx(font_text, TextFormat("%s  : %s", path[i].question_node->value, "yes"), 
-                          (Vector2){60, 260 + (float) 35 * i}, 30, 1, BLACK);
+                strcat(sentence, ", ");
+            }
+
+            else
+            {
+                strcat(sentence, ".");
             }
         }
+
+        size_t line_length = 0;
+
+        for (size_t i = 0; sentence[i] != '\0'; i++)
+        {
+            line_length++;
+
+            if (line_length >= 40 && sentence[i] == ' ')
+            {
+                sentence[i] = '\n';
+                line_length = 0;
+            }
+        }
+
+        DrawTextEx(font_text, sentence, (Vector2){60, 260}, 30, 1, BLACK);
     }
 
     draw_button(get_single_button(), "define again", font_text);
@@ -155,6 +180,7 @@ app_error_t update_difference(app_state_t* app)
 app_error_t draw_difference(app_state_t* app, Font font_text, Font font_headers)
 {
     DrawTextEx(font_headers, "DIFFERENCE MODE", (Vector2){60, 50}, 70, 1, DARKPURPLE);
+    DrawTextEx(font_text, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~", (Vector2){60, 120}, 30, 1, DARKPURPLE);
     draw_button(get_back_button(), "back", font_text);
 
     if (app->mode_stage == MODE_INPUT_FIRST)
@@ -199,37 +225,52 @@ app_error_t draw_difference(app_state_t* app, Font font_text, Font font_headers)
         return APP_SUCCESS;
     }
 
-    DrawTextEx(font_text, TextFormat("The %s is similar to %s in that they both", app->name_buffer, app->question_buffer), (Vector2){60, 200}, 35, 1, BLACK);
-    
     char buffer[1024] = {};
+    size_t used = 0;
     size_t ptr = 0;
-    
-    while (ptr < first_size && ptr < second_size && first_path[ptr].question_node == second_path[ptr].question_node &&
-            first_path[ptr].answer == second_path[ptr].answer)
+
+    while (ptr < first_size && ptr < second_size &&
+           first_path[ptr].question_node == second_path[ptr].question_node &&
+           first_path[ptr].answer == second_path[ptr].answer)
     {
-        if (ptr >= first_size || ptr >= second_size)
-        {
-            DrawTextEx(font_text, "It is the same character.", (Vector2){60, 200}, 35, 1, BLACK);
+        int written = snprintf(buffer + used, sizeof(buffer) - used,
+                               "%s%s%s",
+                               ptr > 0 ? ", " : "",
+                               first_path[ptr].answer ? "" : "not ",
+                               (char*) first_path[ptr].question_node->value);
+
+        if (written < 0 || (size_t) written >= sizeof(buffer) - used)
             break;
-        }
 
-        snprintf(buffer, 1024, "%s %s, ",  first_path[ptr].answer ? "" : "not", (char*) first_path[ptr].question_node->value);
+        used += (size_t) written;
+        ptr++;
     }
-    
-    DrawTextEx(font_text, buffer, (Vector2){60, 240}, 35, 1, BLACK);
 
-    while (ptr < first_size && ptr < second_size)
+    if (ptr > 0)
     {
-
+        DrawTextEx(font_text, TextFormat("%s and %s are similar: they both %s.",
+                              app->name_buffer, app->question_buffer, buffer), (Vector2){60, 200}, 30, 1, BLACK);
     }
-        DrawTextEx(font_text, "Differences:", (Vector2){60, 200}, 40, 1, DARKPURPLE);
-        DrawTextEx(font_text, TextFormat("%s?", (char*) first_path[ptr].question_node->value),
-                    (Vector2){60, 260}, 35, 1, BLACK);
-        DrawTextEx(font_text, TextFormat("%s: %s", app->name_buffer, first_path[ptr].answer ? "YES" : "NO"),
-                    (Vector2){60, 300}, 35, 1, BLACK);
-        DrawTextEx(font_text, TextFormat("%s: %s", app->question_buffer, second_path[ptr].answer ? "YES" : "NO"),
-                    (Vector2){60, 340}, 35, 1, BLACK);
 
+    if (ptr >= first_size || ptr >= second_size)
+    {
+        DrawTextEx(font_text, "They are identical!", (Vector2){60, 320}, 35, 1, DARKPURPLE);
+    }
+    else
+    {
+        char* quest = (char*) first_path[ptr].question_node->value;
+
+        DrawTextEx(font_text, "Differences:", (Vector2){60, 270}, 35, 1, DARKPURPLE);
+
+        DrawTextEx(font_text, TextFormat("%s %s %s, but %s %s %s.",
+                              app->name_buffer,
+                              first_path[ptr].answer ? "is" : "is not", quest,
+                              app->question_buffer,
+                              second_path[ptr].answer ? "is" : "is not", quest), 
+                              (Vector2){60, 310}, 30, 1, BLACK);
+    }
+
+    draw_button(get_single_button(), "compare again", font_text);
 
     return APP_SUCCESS;
 }
